@@ -3,8 +3,8 @@
 class EntidadDao {
 
     public function registrarEntidad(EntidadDto $entidadDto) {
-        $cnn = Conexion::getConexion();
-        $mensaje = "";
+        $cnn = Conexion::getConexion()
+        $mensaje = ""
         try {
             $query = $cnn->prepare("INSERT INTO entidad( idTipoDocumento, NIT, nombreEntidad, correoEntidad, telefonoEntidad) VALUES (?,?,?,?,?)");
 
@@ -26,7 +26,7 @@ class EntidadDao {
             $mensaje = $ex->getMessage();
         }
         $cnn =null;
-        return $mensaje;
+        return $mensaje
     }
     public function modificarEntidad(EntidadDto $entidadDto) {
         $cnn = Conexion::getConexion();
