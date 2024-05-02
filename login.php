@@ -15,7 +15,7 @@
  <nav class="navbar navbar-dark bg-success navbar-expand-md">
 
    <img src="resources/img/SENA11.png" width="50px" />
-
+<br>
    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
     <span class="navbar-toggler-icon"></span>
   </button>
